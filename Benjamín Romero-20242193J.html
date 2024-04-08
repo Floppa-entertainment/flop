@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Floppa converter</title>
+  <meta name="author" content="Benjamín Romero 20242193J">
+  <style>
+    body {background-color: #FFA626;}
+    h1 {font-size: 350%;color:#6359FE;font-family:Arial Black; text-shadow: 2px 4px 3px black}
+    h2 {font-size: 200%;color:#6359FE;font-family:Arial Black; text-shadow: 2px 4px 3px black}
+    p {font-size:150%;font-family:Arial}
+    label {font-family:Arial; font-size: 150%}
+  </style>
+</head>
+  
+<body>
+  <center>
+    <h1 >FLOPPA CONVERTER</h1>
+  <img src="https://i.pinimg.com/564x/93/49/97/9349979cc37e93616c41a7c81f3cdb2e.jpg">
+    </center>
+  <br>
+  <p>
+    Welcome, I'm Big Floppa and I'm goig to help you convert English units of measurement to S.I units.
+  </p>
+  <hr>
+  <h2>LENGTH</h2>
+<label>Convert: </label>
+<input id="flop1" type="number" style="font-size: xx-large;" ><br><br>
+
+<button onclick="mtk()" style="font-size: xx-large;" >Mile to Kilometer</button>
+  
+<button onclick="mtm()" style="font-size: xx-large;" >Mile to meter</button>
+<br><br>  
+<button onclick="itm()" style="font-size: xx-large;" >Inch to meter</button>
+  
+<button onclick="itcm()" style="font-size: xx-large;" >Inch to centimeter</button>
+<br><br>
+<button onclick="ftm()" style="font-size: xx-large;" >Feet to meter</button>
+  
+<button onclick="ftcm()" style="font-size: xx-large;" >Feet to centimeter</button>
+<br><br>
+<p id="demo1" style="font-size:150%"></p>
+
+<script>
+function mtk(){
+    a = document.getElementById("flop1").value;
+    b = 1.60934
+    document.getElementById("demo1").innerHTML = Number(a)*b + " km.";
+}
+function mtm(){
+    a = document.getElementById("flop1").value;
+    b = 1609.34
+    document.getElementById("demo1").innerHTML = Number(a)*b + " m.";
+}
+function itm(){
+    a = document.getElementById("flop1").value;
+    b = 0.0254;
+    document.getElementById("demo1").innerHTML = Number(a)*b + " m.";
+}
+function itcm(){
+    a = document.getElementById("flop1").value;
+    b = 2.54
+    document.getElementById("demo1").innerHTML = Number(a)*b + " cm.";
+}
+function ftm(){
+    a = document.getElementById("flop1").value;
+    b = 0.3048
+    document.getElementById("demo1").innerHTML = Number(a)*b + " m.";
+}
+function ftcm(){
+    a = document.getElementById("flop1").value;
+    b = 30.48 
+    document.getElementById("demo1").innerHTML = Number(a)*b + " cm.";
+}
+</script>
+<br>
+  <p>
+    Work is done, time to celebrate 
+  <a href="https://www.youtube.com/watch?v=jcGQ9D6TaoU">Floppa friday.</a>
+
+  </p>
+</body>
+
+ </html>
